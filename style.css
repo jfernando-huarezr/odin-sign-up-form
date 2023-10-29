@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --text-color: #F1EFEF;
+  --background-color: #191717;
+  --primary-color: #CCC8AA;
+  --secondary-color: #7D7C7C;
+  --title-font: "Changa One", sans-serif;
+  --body-font: "Hind Siliguri", sans-serif;
+}
+
+.banner {
+  min-width: 300px;
+  max-width: 700px;
+  width: 45%;
+  background-image: url("./img/rhodes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  background-position: center;
+  position: relative;
+}
+.banner .logo {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  font-family: var(--title-font);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.banner .logo img {
+  min-width: 80px;
+  max-width: 100px;
+}
+.banner .logo h1 {
+  font-size: 3.5rem;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: var(--body-font);
+}
+
+.all-inputs, form, .titles {
+  padding: 20px 50px;
+}
+
+.all-inputs {
+  display: flex;
+  gap: 50px;
+  margin: 30px -50px;
+  background-color: var(--secondary-color);
+}
+.all-inputs input {
+  width: 320px;
+  margin-bottom: 15px;
+  padding: 5px;
+  height: 1.8rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+.all-inputs .columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+.container .text-content {
+  align-self: center;
+  min-width: 500px;
+}
+
+.spacer {
+  margin-top: 20px;
+}
+
+button {
+  font-family: var(--body-font);
+  padding: 8px 35px;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+button ~ p {
+  margin-top: 20px;
+}
+
+a:link {
+  color: var(--text-color);
+}
+
+a:visited {
+  color: var(--primary-color);
+}
+
+input:focus {
+  outline-style: none;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.09);
+  border: 4px solid var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
